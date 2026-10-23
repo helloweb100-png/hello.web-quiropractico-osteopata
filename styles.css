@@ -570,12 +570,12 @@ html.fx:not(.is-ready) .hud { opacity: 0; }
 .cell h3 { font: 600 clamp(1.35rem, 1.1rem + 1vw, 1.95rem)/1.1 var(--f-display); letter-spacing: -.02em; }
 .cell p { color: #cfdaf7; font-size: .98rem; }
 
-.cell--temprana {
+.cell--geriatrica {
   background:
     radial-gradient(circle at 85% 0%, rgba(77, 180, 246, .4), transparent 55%),
     linear-gradient(160deg, var(--indigo) 0%, var(--ink-800) 100%);
 }
-.cell--temprana::before {
+.cell--geriatrica::before {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background-image: radial-gradient(rgba(166, 219, 252, .22) 1.3px, transparent 1.6px);
   background-size: 20px 20px;
@@ -597,7 +597,7 @@ html.fx:not(.is-ready) .hud { opacity: 0; }
   .cell--descargas { grid-column: 8 / span 5; grid-row: 1; }
   .cell--rehab { grid-column: 8 / span 5; grid-row: 2; }
   .cell--deporte { grid-column: 1 / span 5; grid-row: 3; }
-  .cell--temprana { grid-column: 6 / span 3; grid-row: 3; }
+  .cell--geriatrica { grid-column: 6 / span 3; grid-row: 3; }
   .cell--kine { grid-column: 9 / span 4; grid-row: 3; }
 }
 
