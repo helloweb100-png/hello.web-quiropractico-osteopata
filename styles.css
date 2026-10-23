@@ -574,24 +574,19 @@ html.fx:not(.is-ready) .hud { opacity: 0; }
   background:
     radial-gradient(circle at 85% 0%, rgba(77, 180, 246, .4), transparent 55%),
     linear-gradient(160deg, var(--indigo) 0%, var(--ink-800) 100%);
+  min-height: 440px;
 }
-.cell--geriatrica::before {
-  content: ""; position: absolute; inset: 0; z-index: -1;
-  background-image: radial-gradient(rgba(166, 219, 252, .22) 1.3px, transparent 1.6px);
-  background-size: 20px 20px;
-  mask-image: linear-gradient(160deg, #000 0%, transparent 70%);
-  -webkit-mask-image: linear-gradient(160deg, #000 0%, transparent 70%);
-}
-.cell__ghost { position: absolute; z-index: -1; right: -8%; top: -6%; width: 64%; height: auto; aspect-ratio: 1; opacity: .13; color: var(--sky-hi); }
+.cell--geriatrica .cell__img { object-position: 12% 50%; }
 
 @media (min-width: 620px) {
   .bento { grid-template-columns: repeat(2, 1fr); }
   .cell--ajustes, .cell--deporte { grid-column: span 2; }
   .cell { min-height: 320px; }
   .cell--ajustes { min-height: 420px; }
+  .cell--geriatrica { min-height: 440px; }
 }
 @media (min-width: 960px) {
-  .bento { grid-template-columns: repeat(12, 1fr); grid-auto-rows: 310px; }
+  .bento { grid-template-columns: repeat(12, 1fr); grid-auto-rows: 310px; grid-template-rows: 310px 310px 440px; }
   .cell { min-height: 0; }
   .cell--ajustes { grid-column: 1 / span 7; grid-row: 1 / span 2; }
   .cell--descargas { grid-column: 8 / span 5; grid-row: 1; }
