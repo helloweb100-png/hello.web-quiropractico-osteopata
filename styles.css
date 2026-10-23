@@ -596,8 +596,8 @@ html.fx:not(.is-ready) .hud { opacity: 0; }
   .cell--ajustes { grid-column: 1 / span 7; grid-row: 1 / span 2; }
   .cell--descargas { grid-column: 8 / span 5; grid-row: 1; }
   .cell--rehab { grid-column: 8 / span 5; grid-row: 2; }
-  .cell--deporte { grid-column: 1 / span 5; grid-row: 3; }
-  .cell--geriatrica { grid-column: 6 / span 3; grid-row: 3; }
+  .cell--deporte { grid-column: 1 / span 4; grid-row: 3; }
+  .cell--geriatrica { grid-column: 5 / span 4; grid-row: 3; }
   .cell--kine { grid-column: 9 / span 4; grid-row: 3; }
 }
 
